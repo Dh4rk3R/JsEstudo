@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:ital@0;1&display=swap');
+
+
+:root{
+    --primary-color:rgb(170, 138, 255);
+    --primaty-color-darker:rgb(80, 19, 248);
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.container{
+
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family:'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+
+}
+
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10%;
+   
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 25px;
+}
+
+form input:focus {
+    outline: 4px solid var(--primary-color);
+}
+
+form button{
+    outline: 4px solid var(--primary-color);
+    border: none;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+}
+
+form button:hover{
+    background: var(--primary-color);
+}
+
