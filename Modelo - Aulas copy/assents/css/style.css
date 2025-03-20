@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:ital@0;1&display=swap');
 
-
 :root{
     --primary-color:rgb(4, 16, 182);
     --primaty-color-darker:rgb(0, 126, 175);
+    --primaty-color-result: rgb(146, 112, 241);
 }
 
 *{
     box-sizing: border-box;
     outline: 0;
-}
-
-.container{
-
-
 }
 
 body{
@@ -32,7 +27,10 @@ body{
     background: #fff;
     padding: 20px;
     border-radius: 10%;
-   
+}
+.colunas{
+    background:rgb(234, 234, 234);
+    column-count: 2;
 }
 
 form input, form label, form button{
@@ -45,7 +43,7 @@ form input{
     font-size: 24px;
     height: 50px;
     padding: 0 25px;
-}
+}/*defini tamanho da forma*/
 
 form input:focus {
     outline: 4px solid var(--primary-color);
@@ -57,13 +55,21 @@ form button{
     background: #fff;
     font-size: 18px;
     font-weight: 700;
-    height: 50px;
+    height: 20px 50px;
     cursor: pointer;
     margin-top: 5%;
 
 }
 
 form button:hover{
-    background: var(--primary-color);
+    background: var(--primaty-color-darker);
 }
 
+
+div#resultado{
+    margin-top: 5%;
+}
+
+div#resultado:hover{
+    background: var(--primaty-color-result);
+}

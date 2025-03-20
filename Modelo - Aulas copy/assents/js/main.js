@@ -9,8 +9,7 @@ form.addEventListener('submit', function(e){
 
 function setResult(msg){
     const resultado = document.querySelector('#resultado')
-    resultado.innerHTML = `msg da doidinha` que achou `sairia dessa facel
-    `;
+    resultado.innerHTML = `msg da doidinha sairia dessa facel`;
 
 
 }
