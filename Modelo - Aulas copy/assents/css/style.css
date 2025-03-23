@@ -3,7 +3,7 @@
 :root{
     --primary-color:rgb(4, 16, 182);
     --primaty-color-darker:rgb(0, 126, 175);
-    --primaty-color-result: rgb(146, 112, 241);
+    --primaty-color-result: hsl(184, 75%, 73%);
 }
 
 *{
@@ -30,7 +30,7 @@ body{
 }
 .colunas{
     background:rgb(234, 234, 234);
-    column-count: 2;
+    columns: 2;
 }
 
 form input, form label, form button{
@@ -65,11 +65,16 @@ form button:hover{
     background: var(--primaty-color-darker);
 }
 
-
 div#resultado{
     margin-top: 5%;
 }
 
 div#resultado:hover{
     background: var(--primaty-color-result);
+    cursor: pointer;
+}
+
+.paragrafo-resultado{
+    background-color: aquamarine;
+    padding: 10px 20px;
 }
