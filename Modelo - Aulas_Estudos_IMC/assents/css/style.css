@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:ital@0;1&display=swap');
 
 :root{
-    --primary-color:rgb(4, 16, 182);
+    --primary-color:rgb(73, 85, 245);
     --primaty-color-darker:rgb(0, 126, 175);
     --primaty-color-result: hsl(184, 75%, 73%);
 }
@@ -26,7 +26,7 @@ body{
     margin: 50px auto;
     background: #fff;
     padding: 20px;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 .colunas{
     background:rgb(234, 234, 234);
@@ -58,7 +58,6 @@ form button{
     height: 20px 50px;
     cursor: pointer;
     margin-top: 5%;
-
 }
 
 form button:hover{
@@ -74,7 +73,12 @@ div#resultado:hover{
     cursor: pointer;
 }
 
-.paragrafo-resultado{
+.paragrafo-resultado, .bad{
     background-color: aquamarine;
+    padding: 10px 20px;
+}
+
+.bad{
+    background-color: rgb(250, 137, 137);
     padding: 10px 20px;
 }
