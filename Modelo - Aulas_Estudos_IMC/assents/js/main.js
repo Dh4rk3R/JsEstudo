@@ -6,7 +6,7 @@ form.addEventListener('submit', function (e) {
     const inputAltura = e.target.querySelector('#altura');
 
     const peso = Number(inputPeso.value);
-    const altura = Number(inputAltura.value);
+    const altura = Number(inputAltura.value.replace(",","."));
 
     console.log(peso, altura)
     if (!peso){
@@ -24,7 +24,6 @@ form.addEventListener('submit', function (e) {
 
     const msg = `Seu IMC é ${imc} (${nivel}).`
   
-
 setResult (msg, true);
 
 });
@@ -77,7 +76,7 @@ function setResult(msg, isValid){
     if (isValid){
         p.classList.add('paragrafo-resultado');
     }else{
-        p.classList.add('paragrafo-resultado_bad');
+        p.classList.add('bad');
     }
 
     p.innerHTML = msg;

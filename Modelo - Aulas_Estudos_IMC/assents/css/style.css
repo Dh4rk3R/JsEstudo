@@ -73,7 +73,7 @@ div#resultado:hover{
     cursor: pointer;
 }
 
-.paragrafo-resultado, .bad{
+.paragrafo-resultado,.bad{
     background-color: aquamarine;
     padding: 10px 20px;
 }
